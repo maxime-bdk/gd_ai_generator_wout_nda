@@ -4,8 +4,6 @@ import asyncio
 from pprint import pprint
 from ndaclient import AsyncNDAClient, NDAClient
 
-from Crypto.PublicKey import RSA
-from Crypto.Cipher import PKCS1_OAEP
 nda = 'nda'
 if __name__ == "__main__":
     if len(sys.argv) != 2:
