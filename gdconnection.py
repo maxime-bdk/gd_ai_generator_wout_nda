@@ -2,7 +2,7 @@ import sys
 import time
 import asyncio
 from pprint import pprint
-from gdclient import AsyncGDClient, GDClient
+from ndaclient import AsyncNDAClient, NDAClient
 
 from Crypto.PublicKey import RSA
 from Crypto.Cipher import PKCS1_OAEP
@@ -14,7 +14,7 @@ if __name__ == "__main__":
     generated_code = sys.argv[1]
 
 async def main():
-    async with AsyncGDClient('nda', 'nda', 'nda') as client:
+    async with AsyncNDAClient('nda', 'nda', 'nda') as client:
         # Algorithm creation
             "I can't show it to you due to the nda, but here was just some json request"
 
